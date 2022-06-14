@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 15px;
+}
+
+main {
+    margin: 0px 20px;
+    border-radius: 10px;
+    background-color: red;
+    display: flex;
+    overflow: hidden;
+}
+
+.card {
+    background-color: var(--Dark-cyan);
+    padding: 50px;
+    width: 305px;
+}
+
+.card img {
+    margin-bottom: 40px;
+}
+
+.card h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    margin-bottom: 40px;
+    color: var(--Very-light-gray-background-headings-buttons);
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.card p {
+    line-height: 1.5;
+    font-weight: 400;
+    color: var(--Transparent-white-paragraphs);
+    margin-bottom: 85px;
+}
+
+.card a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--Dark-cyan);
+    border-radius: 50px;
+}
+
+.card a:hover {
+    background-color: transparent;
+    color: var(--Very-light-gray-background-headings-buttons);
+    border: 2px solid var(--Very-light-gray-background-headings-buttons);
+    padding: 13px 28px;
+}
+
+.sedan {
+    background-color: var(--Bright-orange);
+}
+
+.sedan a {
+    color: var(--Bright-orange);
+}
+
+.suvs {
+    background-color: var(--Dark-cyan);
+}
+
+.suvs a {
+    color: var(--Dark-cyan);
+}
+
+.luxury {
+    background-color: var(--Very-dark-cyan);
+}
+
+.luxury a {
+    color: var(--Very-dark-cyan);
+}
+
+@media (max-width: 950px) {
+    body {
+        height: 1600px;
+    }
+
+    main {
+        margin: 40px 20px;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
