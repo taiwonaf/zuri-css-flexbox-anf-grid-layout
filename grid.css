@@ -10,6 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 main {
@@ -50,4 +51,19 @@ main {
     background-color: aqua;
     grid-column: 6 / -1;
     grid-row: 10 / -1;
+}
+
+.switch-btn {
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}
+
+.switch-btn a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0px 20px;
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: white;
 }
